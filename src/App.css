@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   height: 100vh;
-  background-color: rgb(231, 228, 228)
+  background-color: rgb(231, 228, 228);
 }
 
 .App-logo {
@@ -19,18 +19,20 @@
   background-color: #282c34;
   height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-size: auto;
   color: white;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 2;
+  top:0;
 }
 
 .flex-container{
   margin: 20px;
-  margin-right: 50px;
-  display: inline-block;
-  align-items: flex-end;
-  float: right;
+  display: flex;
+  justify-content: end
 }
 
 .flex-container > a{
@@ -41,11 +43,12 @@
 }
 
 .title{
-  display: inline-block;
-  float: left;
-  color: aqua;
+  margin-left: 40px;
+  display: flex;
+  color: orange;
   font-size: 5vh;
-  margin: auto auto auto 20px;
+  align-items: center;
+  font-family: cursive;
 }
 
 .App-link {
@@ -63,6 +66,30 @@
   height: auto;
 }
 
+.About{
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://media.istockphoto.com/id/1271752802/photo/phone-and-e-mail-icons-on-wooden-cubes-with-contact-us-text-on-blue-background-web-page.jpg?s=612x612&w=0&k=20&c=dk9oPaDy_L9mv_icOMgsFGzEDrX0NUI3I8xBQ-DAxQM=);
+}
+.back-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Home{
+  height: 100vh;
+  background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/170407220916-04-iconic-mountains-matterhorn-restricted.jpg?q=w_2512,h_1413,x_0,y_0,c_fill/w_1280");
+  filter: blur(8px);
+}
+.h1{
+  position: absolute;
+  color: white;
+  top: 20vh;
+  left: 50vh;
+  right: 50vh;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,20 +1,31 @@
 
 import React from 'react';
 import '../App.css';
-
+import { Route, Link, BrowserRouter as Router, Routes } from 'react-router-dom'
+import About from './about';
+import Home from './home'
+import Destination from './destinations'
 function Header() {
   return (
-    <header>
-      <nav >
+    <div>
+      <Router>
+    <header className="App-header">
       <div className="title">TrekkDeal</div>
+      <nav>
       <div className="flex-container">
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="/contact">Contact Us</a>
-          <a href="/destination">Destinations</a>
+          <Link to="/">Home</Link>
+          <Link to="/contact">Contact Us</Link>
+          <Link to="/destinations">Destinations</Link>
       </div>
       </nav>
     </header>
+      <Routes>
+      <Route exact path="/" element={<Home/>} />  
+      <Route exact path="/contact" element={<About/>} />  
+      <Route exact path="/destinations" element={<Destination/>} />  
+      </Routes>
+    </Router>
+    </div>
   );
 }
 
