@@ -86,9 +86,16 @@
 .h1{
   position: absolute;
   color: white;
-  top: 20vh;
+  top: 200px;
   left: 50vh;
   right: 50vh;
+}
+.Tour{
+  justify-content: center;
+}
+.Trek{
+  padding: 10px;
+  width: 30%;
 }
 @keyframes App-logo-spin {
   from {
