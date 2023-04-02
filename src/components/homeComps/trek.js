@@ -6,10 +6,11 @@ export default function Trek(props){
     const trek=props.trek;
     return (
         <div className="Trek">
-            <h1>{trek.tripTitle}</h1>
-            <h2>{trek.days}</h2>
-            <h2>{trek.price}</h2>
-            <p>{trek.viewDetails}</p>
+            <h2>{trek.tripTitle}</h2>
+            <img src={trek.viewDetails}></img>
+            <h4>{trek.days}</h4>
+            <h4>${trek.price}</h4>
+              <button>Explore more..!</button>
         </div>
         
     )
