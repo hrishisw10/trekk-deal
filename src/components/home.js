@@ -21,7 +21,7 @@ export default function Home() {
     return(
         <div>
         <div className="Home back-img"></div>
-        <div className="Tours h1">
+        <div className="Tours">
             {toursToRender}
         </div>
         {/* <h1 className="h1">Stay tuned! We're coming soon....</h1> */}

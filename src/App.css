@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100vh;
+  color: white;
   background-color: rgb(231, 228, 228);
 }
 
@@ -45,7 +46,7 @@
 .title{
   margin-left: 40px;
   display: flex;
-  color: orange;
+  color: #00FFF5;
   font-size: 5vh;
   align-items: center;
   font-family: cursive;
@@ -56,9 +57,9 @@
 }
 
 .footer{
-  position: fixed;
+  /* position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
   width: 100%;
   background-color: #282c34;
   color: white;
@@ -77,11 +78,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+  }
 .Home{
-  height: 100vh;
+  /* height: 100vh;
   background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/170407220916-04-iconic-mountains-matterhorn-restricted.jpg?q=w_2512,h_1413,x_0,y_0,c_fill/w_1280");
-  filter: blur(8px);
+  filter: blur(8px); */
 }
 .h1{
   position: absolute;
@@ -92,10 +93,34 @@
 }
 .Tour{
   justify-content: center;
+  border: 0.1px solid white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 2px gray;
+  margin: 10px;
+  background-color: #393E46;
+  /* width: 100%; */
+}
+
+.Tour>div{
+  justify-content: center;
 }
 .Trek{
   padding: 10px;
-  width: 30%;
+  width: 33.33%;
+  border: 0.1px solid gray;
+  background-color: #00ADB5;
+}
+.Trek>img{
+  height: 40%;
+  width:100%;
+  /* max-height: 50%; */
+}
+.Trek>button{
+  width:100%;
+  background-color: #00FFF5;
+  border:none;
+  box-shadow: 2px 2px 2px 2px #282c34;
+  /* max-height: 50%; */
 }
 @keyframes App-logo-spin {
   from {
