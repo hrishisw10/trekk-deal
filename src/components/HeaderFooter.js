@@ -19,11 +19,13 @@ function Header() {
       </div>
       </nav>
     </header>
+        <div className="main">
       <Routes>
       <Route exact path="/" element={<Home/>} />  
       <Route exact path="/contact" element={<About/>} />  
       <Route exact path="/destinations" element={<Destination/>} />  
       </Routes>
+        </div>
     </Router>
     </div>
   );

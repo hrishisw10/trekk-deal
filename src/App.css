@@ -78,11 +78,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  }
+}
+.main{
+  padding: 16px 32px;
+}
 .Home{
-  /* height: 100vh;
+  height: 100vh;
   background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/170407220916-04-iconic-mountains-matterhorn-restricted.jpg?q=w_2512,h_1413,x_0,y_0,c_fill/w_1280");
-  filter: blur(8px); */
+  filter: blur(8px);
 }
 .h1{
   position: absolute;
@@ -120,7 +123,6 @@
   background-color: #00FFF5;
   border:none;
   box-shadow: 2px 2px 2px 2px #282c34;
-  /* max-height: 50%; */
 }
 @keyframes App-logo-spin {
   from {
