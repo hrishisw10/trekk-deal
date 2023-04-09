@@ -32,7 +32,7 @@
 
 .flex-container{
   margin: 20px;
-  display: flex;
+  /* display: flex; */
   justify-content: end
 }
 
@@ -99,11 +99,14 @@
   border: 0.1px solid white;
   border-radius: 5px;
   box-shadow: 4px 4px 4px 2px gray;
-  margin: 10px;
+  margin: 0 10rem;
   background-color: #393E46;
   /* width: 100%; */
 }
-
+.Tour_type{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
 .Tour>div{
   justify-content: center;
 }
@@ -130,5 +133,29 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media(max-width:1200px){
+  .Tour{
+    margin: 0 8rem;
+  }
+}
+@media(max-width:1068px){
+  .Tour{
+    margin: 0 6rem;
+  }
+}
+@media(max-width: 868px){
+  .Tour{
+    margin: 4rem;
+  }
+}
+@media(max-width:768px){
+  .Tour{
+    margin: 0;
+  }
+  .Tour>div{
+    margin-top:6rem; 
   }
 }

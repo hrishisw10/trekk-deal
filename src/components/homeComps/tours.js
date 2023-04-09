@@ -6,7 +6,7 @@ export default function Tours(props){
     const treksToRender=props.tour.trips.map((trek,index)=><Trek key={index} trek={trek}/>)
     return (
         <div className="Tour">
-            <h1>{props.tour.toursType}</h1>
+            <h1 className="Tour_type">{props.tour.toursType}</h1>
             <div className="flex-container">
             {treksToRender}
             </div>
