@@ -57,9 +57,6 @@
 }
 
 .footer{
-  /* position: fixed;
-  left: 0;
-  bottom: 0; */
   width: 100%;
   background-color: #282c34;
   color: white;
@@ -74,18 +71,42 @@
   height: 100%;
   background-image: url(https://media.istockphoto.com/id/1271752802/photo/phone-and-e-mail-icons-on-wooden-cubes-with-contact-us-text-on-blue-background-web-page.jpg?s=612x612&w=0&k=20&c=dk9oPaDy_L9mv_icOMgsFGzEDrX0NUI3I8xBQ-DAxQM=);
 }
-.back-img{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 .main{
   padding: 16px 32px;
 }
-.Home{
-  height: 100vh;
-  background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/170407220916-04-iconic-mountains-matterhorn-restricted.jpg?q=w_2512,h_1413,x_0,y_0,c_fill/w_1280");
-  filter: blur(8px);
+.slideshow{
+  justify-content: center;
+  /* margin: 0 1rem; */
+  height:528px;
+}
+.slide{
+  position: relative;
+  overflow: hidden;
+  width:100%; 
+  max-width: 100%;
+  height:100%;
+  filter: blur(4px black);
+}
+.slide>img{
+  width:100%;
+  height:100%;
+}
+.slide-content{
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  right: 40%;
+}
+.image-gradient{
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0) 50%,#0a0a0a 100%);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 528px;
+  position: absolute;
+  bottom: 0;
+}
+.image-gradient>h2{
+  bottom: 0;
 }
 .h1{
   position: absolute;
