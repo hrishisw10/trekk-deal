@@ -5,6 +5,7 @@ import { Route, Link, BrowserRouter as Router, Routes } from 'react-router-dom'
 import About from './about';
 import Home from './home'
 import Destination from './destinations'
+import TrekDetails from './trekDetailsPage';
 function Header() {
   return (
     <div>
@@ -22,8 +23,9 @@ function Header() {
         <div className="main">
       <Routes>
       <Route exact path="/" element={<Home/>} />  
-      <Route exact path="/contact" element={<About/>} />  
-      <Route exact path="/destinations" element={<Destination/>} />  
+      <Route path="/contact" element={<About/>} />  
+      <Route exact path="/destinations" element={<Destination/>} />
+      <Route path="/trekdetails/:trekId" element={<TrekDetails/>} />  
       </Routes>
         </div>
     </Router>
