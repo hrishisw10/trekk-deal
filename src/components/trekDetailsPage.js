@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import './component.css';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import waimg from './wa.png';
+
 const TrekDetails = (props) => {
     const [details, setDetails] =useState({});
     const params = useParams();
@@ -110,7 +112,7 @@ const TrekDetails = (props) => {
             Object.keys(details).length === 0 ?
             <h2>WA</h2>
             :
-            <a target="#" href={details.whatsappConnURL} className='wa-link'>WA</a>
+            <a target ="#" href={""+params.whatsappConnURL} className='wa-link'><img className="wa-img" src={waimg} alt="WA"></img></a>
         }
         </div>
     )

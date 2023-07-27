@@ -93,13 +93,18 @@
     height:60px;
     bottom:40px;
     right:40px;
-    background-color:#25d366;
+    background-color:#a6ffc6;
+    /* background-image: url("wa.png"); */
     color:#FFF;
     border-radius:50px;
     text-align:center;
     font-size:20px;
     box-shadow: 2px 2px 3px #999;
     z-index:100;
+}
+.wa-img{
+    width:60px;
+    height:60px;
 }
 @media(max-width:1200px){
     .trek-details{

@@ -16,8 +16,8 @@ export default function Trek(props){
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim ad minim veniam, sunt in culpa qui officia deserunt 
                         mollit anim id est laborum.</p>
-                <h4>{trek.days}</h4>
-                <h4>₹{trek.price} onwards..</h4>
+                <h4><strong>{trek.days}</strong></h4>
+                <h4><strong>₹{trek.price} onwards..</strong></h4>
                 <Link to={"/trekdetails/"+trek.trekId} className="trek_cta"><b>Explore More</b></Link>
             </div>
         </div>
