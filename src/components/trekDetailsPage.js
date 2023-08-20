@@ -51,12 +51,12 @@ const TrekDetails = (props) => {
                     <div className="slide w3-animate-right">
                     <img src={images[index]} alt={`Slide ${index}`} />
                     <div className="image-gradient"></div>
-                    <div className="slide-content"><h1>Timepass</h1></div>
+                    <div className="slide-content"><h1>{details.name}</h1></div>
                     </div>
                 </div>
                 <br/>
                 <div className="td-name">
-                    <h1>{details.name}</h1>
+                    {/* <h1>{details.name}</h1> */}
                 </div>
                 <br/>
                 <div className="td-location">

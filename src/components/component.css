@@ -59,7 +59,7 @@
 .trek-details{
     display: flex;
     /* justify-items:  */
-    background-color: #393E46;
+    background-color: rgb(58, 64, 77);
     margin: 0 10rem;
     /* max-width: 90rem; */
     border: 2px solid black;
@@ -105,6 +105,9 @@
 .wa-img{
     width:60px;
     height:60px;
+}
+.trek-details-body{
+    color: #00f2fe;
 }
 @media(max-width:1200px){
     .trek-details{
